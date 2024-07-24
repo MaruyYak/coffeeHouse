@@ -1,0 +1,254 @@
+  /* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+  /* inter-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/inter-v13-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+    /* inter-600 - latin */
+    @font-face {
+        font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        src: url('../fonts/inter-v13-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+      }
+     @font-face {
+         font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+         font-family: 'Inter';
+         font-style: italic;
+         src: url('../fonts/Inter-Italic.woff2') format('woff2');
+       }
+
+
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    height: 100vh;
+}
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  background-color: #E1D4C9;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 600;
+  color: var(--text-dark, #403F3D);
+  padding: 11px 40px 40px;
+}
+
+
+/* Header style starts*/
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    align-items: center;
+  
+  }
+  
+  .header_logo-pic {
+    width: 100px;
+    height: 60px;
+    margin-top: 4px;
+  }
+  nav {
+    margin-bottom: 3px;
+  }
+  
+  nav a {
+    color: var(--text-dark, #403F3D);
+    text-decoration: none;
+    margin: 0 18px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: 0.07px;
+    position: relative;
+    padding-bottom: 4px;
+  }
+  
+  .menu_item-pic {
+    display: flex;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    position: relative;
+  }
+  
+  .menu_item-pic::after, nav a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: #403f3d00;
+    transition-duration: 0.8s;
+    z-index: -1;
+    transform: translateX(-50%);
+  }
+  
+  .menu_item-pic:hover::after, nav a:hover::after {
+    width: 100%;
+    background-color: #403F3D;
+  }
+  
+  .menu_item-pic div {
+    margin-right: 8px;
+    margin-bottom: 3px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  .menu_item-pic img {
+    height: 20px;
+    width: 20px;
+  }
+
+  /* (Footer) ContactUs section style starts*/
+.contactUs {
+    height: 450px;
+    padding: 100px;  
+    background: var(--background-container, #665F55);
+    border-radius: 40px;
+    margin-top: 95px;
+    display: flex;
+  }
+  
+  .footer_content {
+    width: 50%;
+    height: auto;
+    margin-right: 50px;
+  }
+  
+  .footer_text {
+    color: var(--text-accent, #B0907A);
+    font-style: italic;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%;
+  }
+  
+  .footer_text span {
+    color: var(--text-light, #E1D4C9);
+    font-style: italic;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 125%; /* 75px */
+  }
+  
+  .social_meadias {
+    display: flex;
+    margin-top: 40px;
+  }
+  
+  .social_meadias_container {
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+    border: 1px solid var(--border-light, #C1B6AD);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+    transition: background-color 0.3s, border-color 0.3s;
+    transition-duration: 0.8s;
+  }
+  
+  .social_meadias_container:hover {
+    background-color: #E1D4C9;
+  }
+  .social_meadias_container:hover svg path {
+    stroke: #403F3D;
+  }
+  
+  .contact_info {
+    display: flex;
+    flex-direction: column;
+    padding-top: 33px;
+  }
+      /* Desktop/Action/link & button */
+  .contact_info a {
+    color: var(--text-light, #E1D4C9);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 150%; /* 24px */
+    margin-bottom: 20px;
+    display: flex;
+    text-decoration: none;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  
+  
+  .contact_info a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0;
+    height: 2px;
+    background-color: rgba(64, 63, 61, 0);
+    transition-duration: 0.8s;
+    z-index: -1;
+    transform: translateX(-50%);
+  }
+  
+  .contact_info a:hover::after {
+    width: 100%;
+    background-color: #E1D4C9;
+  }
+  
+      /* Desktop/Heading/heading-3 */
+  .contact_info h3 {
+    color: var(--text-light, #E1D4C9);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 125%; /* 30px */
+    margin-bottom: 39px;
+  
+  }
+  
+  .contact_info img {
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+  }
+/* (Footer) ContactUs section style ends*/  
