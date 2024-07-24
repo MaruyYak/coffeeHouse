@@ -35,7 +35,7 @@ const products = [
   },
 
   {
-    "name": "Kahlua coffee",
+    "name": "Kahlua_coffee",
     "description": "Classic coffee with milk and Kahlua liqueur under a cap of frothed milk",
     "price": "7.00",
     "category": "coffee",
@@ -70,7 +70,7 @@ const products = [
   },
 
   {
-    "name": "Honey raf",
+    "name": "Honey_raf",
     "description": "Espresso with frothed milk, cream and aromatic honey",
     "price": "5.50",
     "category": "coffee",
@@ -105,7 +105,7 @@ const products = [
   },
 
   {
-    "name": "Ice cappuccino",
+    "name": "Ice_cappuccino",
     "description": "Cappuccino with soft thick foam in summer version with ice",
     "price": "5.00",
     "category": "coffee",
@@ -210,7 +210,7 @@ const products = [
   },
 
   {
-    "name": "Latte macchiato",
+    "name": "Latte_macchiato",
     "description": "Espresso with frothed milk and chocolate",
     "price": "5.50",
     "category": "coffee",
@@ -245,7 +245,7 @@ const products = [
   },
 
   {
-    "name": "Coffee with cognac",
+    "name": "Coffee_with cognac",
     "description": "Fragrant black coffee with cognac and whipped cream",
     "price": "6.50",
     "category": "coffee",
@@ -385,7 +385,7 @@ const products = [
   },
 
   {
-    "name": "Sea buckthorn",
+    "name": "Sea_buckthorn",
     "description": "Toning sweet black tea with sea buckthorn, fresh thyme and cinnamon",
     "price": "5.50",
     "category": "tea",
@@ -420,7 +420,7 @@ const products = [
   },
 
   {
-    "name": "Marble cheesecake",
+    "name": "Marble_cheesecake",
     "description": "Philadelphia cheese with lemon zest on a light sponge cake and red currant jam",
     "price": "3.50",
     "category": "dessert",
@@ -455,7 +455,7 @@ const products = [
   },
 
   {
-    "name": "Red velvet",
+    "name": "Red_velvet",
     "description": "Layer cake with cream cheese frosting",
     "price": "4.00",
     "category": "dessert",
@@ -525,7 +525,7 @@ const products = [
   },
 
   {
-    "name": "Creme brulee",
+    "name": "Creme_brulee",
     "description": "Delicate creamy dessert in a caramel basket with wild berries",
     "price": "4.00",
     "category": "dessert",
@@ -595,7 +595,7 @@ const products = [
   },
 
   {
-    "name": "Honey cake",
+    "name": "Honey_cake",
     "description": "Classic honey cake with delicate custard",
     "price": "4.50",
     "category": "dessert",
@@ -630,7 +630,7 @@ const products = [
   },
 
   {
-    "name": "Chocolate cake",
+    "name": "Chocolate_cake",
     "description": "Cake with hot chocolate filling and nuts with dried apricots",
     "price": "5.50",
     "category": "dessert",
@@ -665,7 +665,7 @@ const products = [
   },
 
   {
-    "name": "Black forest",
+    "name": "Black_forest",
     "description": "A combination of thin sponge cake with cherry jam and light chocolate mousse",
     "price": "6.50",
     "category": "dessert",

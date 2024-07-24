@@ -75,7 +75,7 @@ function openModal(event) {
             if (elementProduct) {
                 selectedItem = elementProduct;
                 modal.classList.toggle('openModal');
-                generateModal(elementProduct)
+                generateModal(elementProduct, parentElement.id)
             } 
                 return; 
          }
@@ -83,10 +83,14 @@ function openModal(event) {
     }
 }
 
-function generateModal(item) {
+function generateModal(item, photoId) {
   const name = document.querySelector('.popup_title');
   const desc = document.querySelector('.popup_desc');
   const sizeOptions = document.querySelectorAll('.popup_buttons .size');
+  const imgElement = document.querySelector('.popup_img img');
+
+  imgElement.src = `./img/Menu/${photoId}.png`;
+  imgElement.alt = photoId;
    
   selectSizeOption();
   additiveOptions();
