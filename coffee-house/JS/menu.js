@@ -71,7 +71,7 @@ function openModal(event) {
     let parentElement = clickedElement.parentElement;
     while (parentElement) {
         if (parentElement.id) {            
-            let elementProduct = products.find(product => product.name === parentElement.id);
+            let elementProduct = products.find(product => product.id === parentElement.id);
             if (elementProduct) {
                 selectedItem = elementProduct;
                 modal.classList.toggle('openModal');
