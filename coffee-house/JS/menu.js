@@ -83,11 +83,19 @@ function openModal(event) {
     }
 }
 
+function setOptions(elements, data, key) {
+  elements.forEach((element, index) => {
+      element.textContent = data[index][key];
+  });
+}
+
 function generateModal(item, photoId) {
   const name = document.querySelector('.popup_title');
   const desc = document.querySelector('.popup_desc');
   const sizeOptions = document.querySelectorAll('.popup_buttons .size');
   const imgElement = document.querySelector('.popup_img img');
+  const sizeOptionElements = document.querySelectorAll('.size_option');
+  const additiveOptionElements = document.querySelectorAll('.additive_option');
 
   imgElement.src = `./img/Menu/${photoId}.png`;
   imgElement.alt = photoId;
@@ -98,10 +106,11 @@ function generateModal(item, photoId) {
   selectedAdditives = [];
   sizeOptions[0].classList.add('option_button_info_selected');
   selectedSize = 's';
- 
   name.innerHTML = item.name;
   desc.innerHTML = item.description;
-
+  setOptions(sizeOptionElements, Object.values(item.sizes), 'size');
+  setOptions(additiveOptionElements, item.additives, 'name');
+  
   calculatePrice();
 }
 

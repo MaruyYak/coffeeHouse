@@ -684,8 +684,8 @@ const products = [
   },
 
   {
-    "name": "Blackyforest",
-    "id": "Blackyforest",
+    "name": "Black forest",
+    "id": "Black_forest",
     "description": "A combination of thin sponge cake with cherry jam and light chocolate mousse",
     "price": "6.50",
     "category": "dessert",
